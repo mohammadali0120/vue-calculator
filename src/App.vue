@@ -33,14 +33,14 @@
           </ul>
         </div>
         <div class="calc__content_right">
-          <ul class="calc__content__operator">
-            <li class="calc__content__operator-item" @click="add">+</li>
-            <li class="calc__content__operator-item" @click="minus">-</li>
-            <li class="calc__content__operator-item" @click="times">&times;</li>
-            <li class="calc__content__operator-item" @click="divide">
+          <ul class="calc__content_operator">
+            <li class="calc__content_operator-item" @click="add">+</li>
+            <li class="calc__content_operator-item" @click="minus">-</li>
+            <li class="calc__content_operator-item" @click="times">&times;</li>
+            <li class="calc__content_operator-item" @click="divide">
               &divide;
             </li>
-            <li class="calc__content__operator-item" @click="equl">=</li>
+            <li class="calc__content_operator-item" @click="equl">=</li>
           </ul>
         </div>
       </div>
@@ -256,12 +256,12 @@ export default {
       .calc__content_right {
         width: 25%;
         flex-basis: 25%;
-        .calc__content__operator {
+        .calc__content_operator {
           list-style: none;
           display: flex;
           flex-wrap: wrap;
           // height: 100%;
-          .calc__content__operator-item {
+          .calc__content_operator-item {
             flex-basis: 100%;
             background: #ffc46c;
             text-align: center;
@@ -271,7 +271,7 @@ export default {
             padding: 15px 0;
             border: 1px solid #0000001a;
           }
-          .calc__content__operator-item:last-child {
+          .calc__content_operator-item:last-child {
             border-radius: 0 0 7px 0;
             border-bottom: 0;
           }
